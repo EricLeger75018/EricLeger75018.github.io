@@ -131,3 +131,9 @@ main{
     transform: rotateX(360deg) rotateY(360deg);
   }
 }
+
+#carroussel{
+  background-image: url("../img/defense.jpg") ;
+  width: 746px;
+  height: 498px ;
+}
