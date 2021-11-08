@@ -39,6 +39,7 @@ main{
   mix-blend-mode: multiply;
 }
 figure{
+  background: red;
   width: 40%;
   height: 70vh;
   display: flex;
