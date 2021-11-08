@@ -1,0 +1,133 @@
+@import url(style.css);
+
+
+
+
+main{
+    width: 100%;
+    height: 170vh;
+    background: yellow;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+
+.container1{
+  width: 48%;
+  height: 160vh;
+  background: blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+    
+}
+
+.container2{
+    width: 48%;
+    height: 160vh;
+    background: green;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    
+}
+
+.card{
+    background: cyan;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    text-align: center;
+}
+
+.card2{
+    height: 60vh;
+
+}
+
+.card3{
+    width: 70%;
+
+}
+
+
+/* cube 3d */
+
+
+.containercube {
+  background: blueviolet;
+  width: 200px;
+  height: 400px;
+  perspective: 1000px;
+  
+}
+
+.cube {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: spin 10s infinite linear;
+  
+}
+
+.face {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 80px;
+  border: solid 2px #949494;
+  background-color: #d8d8d8;
+}
+
+.top {
+ color:  #3d2d00;
+  
+  transform: rotateX(90deg) translateZ(100px);
+}
+.bottom {
+  color: #8993be;
+  
+
+  transform: rotateX(-90deg) translateZ(100px);
+}
+
+.right {
+ 
+  color: #f0db4f;
+  transform: rotateY(90deg) translateZ(100px);
+}
+.left {
+  color: #2965f1;
+ 
+
+  transform: rotateY(-90deg) translateZ(100px);
+}
+
+.front {
+  color: #f06529;
+ 
+
+  transform: rotateX(0deg) translateZ(100px);
+}
+.back {
+  transform: rotateX(-180deg) translateZ(100px);
+}
+
+@keyframes spin {
+  from {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  to {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}

@@ -1,0 +1,425 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: black;
+  
+  
+}
+
+/* HEADER */
+
+
+nav {
+  
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  min-height: 15vh;
+  background: #e5e5e5;
+  
+  
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+.fa-laptop-code{
+  font-size: 80px;
+}
+
+.nom{
+  font-size: 80px;
+  font-weight: 900;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.logo > a {
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 20px;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
+
+.nav-links li {
+  list-style: none;
+}
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.burger {
+  display: none;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color:black;
+  margin: 5px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+
+
+/* footer */
+.footer {
+  width: 100%;
+  min-height: 15vh;
+  background: #e5e5e5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+  
+  
+  
+}
+
+
+
+.reseaux {
+  width: 95%;
+  height: 14vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+
+.reseaux li {
+  text-decoration: none;
+  width: 110px;
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  font-size: 60px;
+  border-radius: 47px;
+  background: linear-gradient(225deg, #f5f5f5, #cecece);
+  box-shadow:  -200px 200px 400px #dedede,
+               200px -200px 400px #ececec;
+  
+}
+
+.fa-linkedin {
+  color: #0e76a8;
+  
+}
+
+.fa-facebook { 
+  color: #3b5998;
+  
+}
+.fa-github {
+  color: #171515;
+ 
+}
+
+#instagram {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px; 
+  border-radius: 13px; 
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+  
+  
+  
+}
+
+.fa-instagram{
+  color:#e5e5e5 ;
+  
+}
+
+
+/* responsive */
+
+@media screen and (max-width: 1024px) {
+  body {
+    overflow-x: hidden;
+
+    width: 100%;
+    
+  }
+
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 70vh;
+    top: 15vh;
+    background-color: #e5e5e5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    z-index: 6;
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .burger {
+    display: block;
+  }
+
+  .fa-laptop-code{
+    font-size: 30px;
+  }
+  
+  .nom{
+    font-size: 20px;
+  }
+
+  .nav-active {
+    transform: translateX(0%);
+  }
+  
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+  
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  
+  .toggle .line2 {
+    opacity: 0;
+  }
+  
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+  
+  .nav-active {
+    transform: translateX(0%);
+  }
+  
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+  
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  
+  .toggle .line2 {
+    opacity: 0;
+  }
+  
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+  
+
+  footer {
+    width: 100%;
+    height: 15vh;
+    background: #e5e5e5;
+    position: absolute;
+    bottom: 0px;
+    
+  }
+
+  .reseaux li{
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+  }
+
+  #instagram {
+    width: 25px;
+    height: 25px;
+    border-radius: 10px;
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+
+    width: 100%;
+    height: 100vh;
+  }
+
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 70vh;
+    top: 15vh;
+    background-color: #e5e5e5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    z-index: 6;
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .burger {
+    display: block;
+  }
+
+  .fa-laptop-code{
+    font-size: 30px;
+  }
+  
+  .nom{
+    font-size: 20px;
+  }
+
+  
+  .nav-active {
+    transform: translateX(0%);
+  }
+  
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+  
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  
+  .toggle .line2 {
+    opacity: 0;
+  }
+  
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+  
+  .nav-active {
+    transform: translateX(0%);
+  }
+  
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+  
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  
+  .toggle .line2 {
+    opacity: 0;
+  }
+  
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+  
+  
+
+  footer {
+    width: 100%;
+    height: 15vh;
+    background: #e5e5e5;
+    position: absolute;
+    bottom: 0px;
+    
+  }
+
+  .reseaux li{
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+  }
+
+  #instagram {
+    width: 25px;
+    height: 25px;
+    border-radius: 10px;
+  }
+}*/
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
