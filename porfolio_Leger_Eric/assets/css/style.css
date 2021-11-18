@@ -658,6 +658,7 @@ footer span a:hover{
 
     .home{
         background:url(../images/banner2.jpg);
+        background-size: cover;
     }
     .home .home-content .text-2{
         font-size: 50px;
