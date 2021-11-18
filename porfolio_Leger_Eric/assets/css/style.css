@@ -50,7 +50,7 @@ section{
 section .title{
     position: relative;
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 500;
     margin-bottom: 60px;
     padding-bottom: 20px;
@@ -68,9 +68,9 @@ section .title::before{
 }
 section .title::after{
     position: absolute;
-    bottom: -8px;
+    bottom: -35px;
     left: 50%;
-    font-size: 20px;
+    font-size: 19px;
     color: crimson;
     padding: 0 5px;
     background: #fff;
@@ -561,8 +561,8 @@ footer span a:hover{
 /* responsive media query start */
 @media (max-width: 1104px) {
     .about .about-content .left img{
-        height: 350px;
-        width: 350px;
+        height: 280px;
+        width: 280px;
     }
 }
 
