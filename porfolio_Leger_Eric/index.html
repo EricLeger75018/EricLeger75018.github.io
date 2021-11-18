@@ -1,62 +1,268 @@
 <!DOCTYPE html>
+<!-- Created By Leger eric -->
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/9f448c22db.js" crossorigin="anonymous"></script>
-     
-    <title>Page d' accueil</title>
+    <title>Personal Portfolio Website Leger Eric</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+
 </head>
 <body>
-       <header>
-              <nav>
-                <div class="logo">
-                 <a href="index.html"><i class="fas fa-laptop-code"></i><span class="nom"> L&Eacuteger  &Eacuteric</span></a>
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#"><i class="fas fa-laptop-code"></i>Portfo<span>lio.</span></a></div>
+            <ul class="menu">
+                <li><a href="#home" class="menu-btn">Accueil</a></li>
+                <li><a href="#about" class="menu-btn">&Agrave propos</a></li>
+                <li><a href="#services" class="menu-btn">Comp&eacutetences</a></li>
+                <li><a href="#skills" class="menu-btn">D&eacuteveloppement</a></li>
+                <li><a href="#teams" class="menu-btn">Teams</a></li>
+                <li><a href="#contact" class="menu-btn">Contact</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- home section start -->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Bonjour, je m' appelle</div>
+                <div class="text-2">L&eacuteger &Eacuteric</div>
+                <div class="text-3"> Je  <span class="typing"></span></div>
+                <a href="#contact">Engagez moi !</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- about section start -->
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">&Agrave propos</h2>
+            <div class="about-content">
+                <div class="column left">
+                    <img src="assets/images/photographe.jpg" alt="">
                 </div>
-                <ul class="nav-links">
-                 <li><a href="index.html">Accueil</a></li>
-                 <li><a href="apropos.html">A propos</a></li>
-                 <li><a href="cv.html">C.V</a></li>
-                 <li><a href="portfolio.html">Portfolio</a></li>
-                </ul>
-               <div class="burger">
-                 <div class="line1"></div>
-                 <div class="line2"></div>
-                 <div class="line3"></div>
-               </div>
-              </nav>
-        </header>
-         <main>
-               <div class="text-box">
-                     <h3>UN</h3>
-                     <h1>D&EacuteVELOPPEUR<br>WEB</h1>
-                     <h3>POUR VOUS</h3>
-               </div>
+                <div class="column right">
+                    <div class="text">Je me pr&eacutenomme Eric, je <span class="typing-2"></span></div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ut voluptatum eveniet doloremque autem excepturi eaque, sit laboriosam voluptatem nisi delectus. Facere explicabo hic minus accusamus alias fuga nihil dolorum quae. Explicabo illo unde, odio consequatur ipsam possimus veritatis, placeat, ab molestiae velit inventore exercitationem consequuntur blanditiis omnis beatae. Dolor iste excepturi ratione soluta quas culpa voluptatum repudiandae harum non.</p>
+                    <a href="#">Telecharger mon CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-               <figure>
-                 <img src="assets/img/moi3.jpeg" alt="eric leger">
-               </figure>
-            </main>
-            <div class="footer">
-              <ul class="reseaux">
-               <li><a href="index.html"><i class="fab fa-linkedin "></i></a></li>
-               <li><a href="quiindex.html"><i class="fab fa-github"></i></a></li>
-               <li><a href="https://www.facebook.com/eric.leger3/" target="_blank"><i class="fab fa-facebook"></i></a></li>
-               <li><a id="instagram" href="https://www.instagram.com/eric_leger/" target="_blank"><i class="fa fa-instagram" ></i></a></li>
-           </ul>
-     
-          </div>  
-          
-          <script src="assets/js/app.js"></script>
-        
+    <!-- services section start -->
+    <section class="services" id="services">
+        <div class="max-width">
+            <h2 class="title">Mes comp&eacutetences,</h2>
+            <div class="serv-content">
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-camera"></i>
+                        <div class="text">Photographie</div>
+                        <p>Passionn&eacute par cette pratique, je suis à même d' utiliser les logiciels n&eacutec&eacutessaire à cette derniere. (photoshop, lightroom, luminar). Cela me permets &eacutegalement d' apporter un oeil aiguisé et un soucis du d&eacutetail sur de futur projets.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-chart-line"></i>
+                        <div class="text">Management</div>
+                        <p>Fort de mon experience pass&eacutee dans le monde du retail, ainsi que celui de l' exploitation cin&eacutematographique, j' ai acquis les comp&eacutetences me premettant d' int&eacutegrer, de m'adapter, d'evoluer rapidement au sein d' une nouvelle  structure. </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-code"></i>
+                        <div class="text">D&eacutevellopement</div>
+                        <p>Ayant d&eacutecouvert cet univers passionnant r&eacutecement. Je me suis inscrit a l' &eacutecole Doranco, celle ci me dispense le savoir n&eacutecessaire en m' enseignant les diff&eacuterents languages (html, css, javascript, php) ainsi que l utilisation de diff&eacuterents outils (bootstrap, git, symfony, wordpress) </p>
+                    </div>
+                </div>
+               </div>
+            </div>
+        </div>
+    </section>
 
-    
-    
+    <!-- skills section start -->
+    <section class="skills" id="skills">
+        <div class="max-width">
+            <h2 class="title">D&eacuteveloppement</h2>
+            <div class="skills-content">
+                <div class="column left">
+                    <div class="text">My creative skills & experiences.</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, ratione error est recusandae consequatur, iusto illum deleniti quidem impedit, quos quaerat quis minima sequi. Cupiditate recusandae laudantium esse, harum animi aspernatur quisquam et delectus ipsum quam alias quaerat? Quasi hic quidem illum. Ad delectus natus aut hic explicabo minus quod.</p>
+                    <a href="#">Read more</a>
+                </div>
+                <div class="column right">
+                    <div class="bars">
+                        <div class="info">
+                            <span>HTML</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="line html"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>CSS</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="line css"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>JavaScript</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="line js"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>PHP</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="line php"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>MySQL</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="line mysql"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- teams section start -->
+    <section class="teams" id="teams">
+        <div class="max-width">
+            <h2 class="title">Mes projets</h2>
+            <div class="carousel owl-carousel">
+                <div class="card" >
+                    <div class="box" >
+                        <a href="">
+                        <img src="assets/images/profile-1.jpg"  alt="">
+                        <div class="text">Someone name</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <a href="">
+                        <img src="assets/images/leica.jpg" alt="">
+                        <div class="text">LEICA</div>
+                        <p>un projet reprenant le site de la c&eacutel&egravebre marque iconique d' appareils photographique </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <a href="">
+                        <img src="assets/images/profile-3.jpeg" alt="">
+                        <div class="text">Someone name</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <a href="">
+                        <img src="assets/images/profile-4.jpeg" alt="">
+                        <div class="text">Someone name</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <a href="">
+                        <img src="assets/images/profile-5.jpeg" alt="">
+                        <div class="text">Someone name</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section start -->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Contactez moi</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">Prenons contact</div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos harum corporis fuga corrupti. Doloribus quis soluta nesciunt veritatis vitae nobis?</p>
+                    <div class="icons">
+                        <div class="row">
+                            <i class="fas fa-user"></i>
+                            <div class="info">
+                                <div class="head">Nom</div>
+                                <div class="sub-title">Leger Eric</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info">
+                                <div class="head">Adresse</div>
+                                <div class="sub-title">Paris, France</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-envelope"></i>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="sub-title">eric.loreak@gmail.com</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column right">
+                    <div class="text">Ecrivez moi</div>
+                    <form action="#">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" placeholder="Nom" required>
+                            </div>
+                            <div class="field email">
+                                <input type="email" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <input type="text" placeholder="Sujet" required>
+                        </div>
+                        <div class="field textarea">
+                            <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
+                        </div>
+                        <div class="button-area">
+                            <button type="submit">ENVOYER</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section start -->
+    <footer>
+        <span>Created By <a href="">Leger Eric</a> | <span class="far fa-copyright"></span> 2021 All rights reserved.</span>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
 </body>
-</html
+</html>
