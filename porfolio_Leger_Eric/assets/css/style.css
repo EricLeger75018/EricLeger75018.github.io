@@ -381,7 +381,7 @@ section .title::after{
 
 /* teams section styling */
 .teams .title::after{
-    content: "jetez un coup d' oeil";
+    content: "un coup d' oeil ?";
 }
 .teams .carousel .card a{
     display: flex;
