@@ -545,7 +545,7 @@ section .title::after{
 /* footer section styling */
 footer{
     background: #111;
-    padding: 15px 23px;
+    padding: 30px 23px;
     color: #fff;
     text-align: center;
     display: flex;
@@ -556,15 +556,16 @@ footer{
 footer span i{
     color: crimson;
     text-decoration: none;
+    font-style: normal;
 }
 footer span a:hover{
     text-decoration: underline;
 }
 .socials{
     display: flex;
-    justify-content: space-around;
-    width: 900px;
-    padding-right: 300px;
+    justify-content: space-between;
+    width: 70%;
+    padding-right: 200px;
     
     
 }
@@ -578,9 +579,10 @@ footer li{
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 60px;
 }
 footer a {
-    font-size: 60px;
+    
     color: #fff;
     
     
@@ -596,6 +598,11 @@ footer  a:hover{
     .about .about-content .left img{
         height: 280px;
         width: 280px;
+    }
+
+    .socials{
+        width: 60%;
+        padding-right: 100px;
     }
 }
 
@@ -667,6 +674,17 @@ footer  a:hover{
         width: 100%;
         margin-bottom: 35px;
     }
+
+    footer{
+        flex-direction: column-reverse;
+        align-items: stretch;
+    }
+    .socials{
+        padding-right: 70px;
+    }
+    footer span {
+        padding-top: 20px;
+    }
 }
 
 @media (max-width: 690px) {
@@ -725,13 +743,11 @@ footer  a:hover{
     footer span {
         display: none;
     }
+
+
     .socials{
         display: flex;
-        justify-content: space-around;
-        width: 270px;
-        padding-right: 25px;
-        
-        
+        padding-right: 40px;  
     }
 
 footer li{
