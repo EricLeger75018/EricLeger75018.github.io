@@ -676,7 +676,6 @@ footer  a:hover{
     }
 
     footer{
-        flex-direction: column-reverse;
         align-items: stretch;
     }
     .socials{
