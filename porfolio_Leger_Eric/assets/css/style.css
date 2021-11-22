@@ -595,6 +595,11 @@ footer  a:hover{
 
 /* responsive media query start */
 @media (max-width: 1104px) {
+
+    .navbar .logo a{
+    font-size: 30px;
+    }
+
     .about .about-content .left img{
         height: 280px;
         width: 280px;
@@ -676,13 +681,17 @@ footer  a:hover{
     }
 
     footer{
-        align-items: stretch;
-    }
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        }
     .socials{
+        width: 90%;
         padding-right: 70px;
     }
     footer span {
         padding-top: 20px;
+        font-size: 10px;
     }
 }
 
@@ -746,7 +755,8 @@ footer  a:hover{
 
     .socials{
         display: flex;
-        padding-right: 40px;  
+        padding-right: 40px;
+        width: 100%;  
     }
 
 footer li{
